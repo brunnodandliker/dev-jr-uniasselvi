@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: block;
+    width: 100%;
+    background-color: #FFDD00;
+    margin: 0px;
+    padding: 8px 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header h1 {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Grenze';
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu-icon {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #FFF;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: all 0.7s ease;
+}
+
+header .menu-icon:hover {
+    color: #FFF;
+    background-color: #000;
+}
+
+.card-list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.card-info {
+    max-width: 100%;
+    width: calc(100% - 30px);
+    padding: 25px 18px;
+    box-sizing: border-box;
+    margin: 15px 15px 0;
+    background-color: #F2F2F2;
+    font-family: "Work Sans";
+    border-radius: 10px;
+}
+
+.card-list .card-info:nth-child(2) h3 {
+    margin: 0 0 15px;
+}
+
+.card-info h3 {
+    display: block;
+    width: 100%;
+    margin: 0 0 35px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Grenze";
+}
+
+.card-info p {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-info .img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 170px;
+    margin: 0 auto;
+    min-height: 170px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card-info .img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-info a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    background-color: #FFDD00;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+
+.card-info a:hover {
+    color: #FFDD00;
+    background-color: #000;
+}
+
+@media screen and (min-width: 720px) {
+    header {
+        padding: 5px 0px 3px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .card-list {
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 300px;
+    }
+
+    .card-info {
+        width: 30%;
+        transition: all 0.4s ease;
+    }
+
+    .card-info:hover {
+        transform: translateY(-10px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-list {
+        width: 1200px;
+        margin: 300px auto 0;
+    }
+
+    .card-info {
+        width: 265px;
+    }
+
+    .card-info .img img  {
+        border-radius: 100%;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card-list {
+        width: 1400px;
+        margin: 300px auto 0;
+    }
+}
